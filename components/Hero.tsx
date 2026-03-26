@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 export default function Hero() {
@@ -5,22 +6,17 @@ export default function Hero() {
     <section className="relative pt-[14vh] sm:pt-[18vh] pb-20 sm:pb-28">
       <div className="relative">
         <FadeIn>
-          {/* Photo placeholder */}
-          <div className="w-[4.5rem] h-[4.5rem] rounded-full bg-cream-mid ring-1 ring-sand-dark/40 mb-10 flex items-center justify-center overflow-hidden">
-            {/* TODO: Replace with <Image src="/images/kiah.jpg" ... /> */}
-            <svg
-              className="w-7 h-7 text-ink-ghost"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0"
+          <div className="bg-white/30 shadow-lg shadow-cream-dark/50 border border-white w-38 h-38 flex justify-center items-center mb-10 rounded-full">
+            <div className="w-35 h-35 rounded-full bg-cream-mid overflow-hidden">
+              <Image
+                src="/images/me.png"
+                alt="Miciah Henderson"
+                width={144}
+                height={144}
+                className="object-cover w-full h-full"
+                priority
               />
-            </svg>
+            </div>
           </div>
         </FadeIn>
 

@@ -48,7 +48,7 @@ export const projects: Record<string, Project> = {
     name: "Rejoice",
     description:
       "A simple and delightful Rust web framework. File-based routing, type-safe templates, and Solid.js islands.",
-    tech: ["Rust", "Solid.js"],
+    tech: ["Rust", "Axum", "SQLite", "Maud", "SQLx", "Solid.js"],
     url: "https://rejoice.kiahjh.com",
     image: "/images/rejoice.png",
     imageAlt: "Rejoice framework code snippet",
