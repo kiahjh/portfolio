@@ -1,4 +1,5 @@
 import FadeIn from "./FadeIn";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -45,6 +46,12 @@ export default function Contact() {
           >
             X
           </a>
+          <Link
+            href="/resume"
+            className="hover:text-ink transition-colors duration-200"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </FadeIn>

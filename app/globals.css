@@ -105,6 +105,52 @@ html {
   box-shadow: inset 0 -0.35em 0 var(--color-terracotta-light);
 }
 
+/* ─── Resume print styles ─── */
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .resume-page {
+    max-width: none;
+  }
+
+  @page {
+    size: letter;
+    margin: 0.6in 0.7in;
+  }
+}
+
+.resume-link {
+  color: var(--color-ink-light);
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-sand-dark);
+  text-underline-offset: 0.15em;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.resume-link:hover {
+  color: var(--color-terracotta);
+  text-decoration-color: var(--color-terracotta-light);
+}
+
+@media print {
+  .resume-link {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
 /* ─── Subtle grain texture ─── */
 body::before {
   content: "";

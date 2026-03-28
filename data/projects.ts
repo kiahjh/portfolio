@@ -26,7 +26,7 @@ export const projects: Record<string, Project> = {
     name: "Resolve",
     description:
       "A published native iOS app. SwiftUI and Rust on the client, pure Rust (Axum) on the backend.",
-    tech: ["SwiftUI", "Rust", "Axum"],
+    tech: ["SwiftUI", "Rust", "Axum", "Crux"],
     url: "https://resolveapp.net",
     image: "/images/resolve.png",
     imageAlt: "Resolve app screenshot",
